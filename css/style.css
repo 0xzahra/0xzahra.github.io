@@ -133,3 +133,10 @@ blockquote{max-width:46ch;margin-top:40px;font-size:clamp(17px,1.6vw,24px);line-
 @media (max-width:760px){.shop-grid{grid-template-columns:1fr;gap:18px}.prod{min-height:340px;padding:28px 22px 24px}.prod-cta .btn{flex:1 1 auto}}
 @media (prefers-reduced-motion:reduce){.prod:hover .n,.prod:hover h3{transform:none}}
 .p .badge{align-self:flex-start;margin-bottom:14px;padding:4px 10px;border:1px solid #39ff8866;border-radius:999px;color:var(--g);font-size:10px}
+.p .badge{max-width:100%}
+.p.cv{border-color:#ff2d3d55}.p.cv h3{color:var(--r)}
+.socials{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.soc{width:52px;height:52px;display:grid;place-items:center;border:1px solid #ffffff2e;border-radius:50%;color:var(--t);transition:color .3s,border-color .3s,background .3s,box-shadow .3s}
+.soc svg{width:20px;height:20px;fill:currentColor}
+.soc:hover{color:#021;background:var(--g);border-color:var(--g);box-shadow:0 0 24px #39ff8866}
+@media (max-width:760px){.socials{gap:10px}.soc{width:46px;height:46px}}
