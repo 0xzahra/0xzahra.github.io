@@ -50,7 +50,7 @@ if(FINE){const xs=gsap.quickTo(cur,'x',{duration:.35,ease:'power3'}),ys=gsap.qui
 if(FINE)$$('[data-mag]').forEach(el=>{const qx=gsap.quickTo(el,'x',{duration:.5,ease:'elastic.out(1,.4)'}),qy=gsap.quickTo(el,'y',{duration:.5,ease:'elastic.out(1,.4)'});
  el.addEventListener('mousemove',e=>{const r=el.getBoundingClientRect();qx((e.clientX-r.left-r.width/2)*.4);qy((e.clientY-r.top-r.height/2)*.4)});
  el.addEventListener('mouseleave',()=>{qx(0);qy(0)})});
-$$('.p').forEach(p=>p.addEventListener('mousemove',e=>{const r=p.getBoundingClientRect();p.style.setProperty('--x',e.clientX-r.left+'px');p.style.setProperty('--y',e.clientY-r.top+'px')}));
+$$('.p,.prod').forEach(p=>p.addEventListener('mousemove',e=>{const r=p.getBoundingClientRect();p.style.setProperty('--x',e.clientX-r.left+'px');p.style.setProperty('--y',e.clientY-r.top+'px')}));
 
 /* ---------- avatar: idle + head follow ---------- */
 const avatar=$('#avatar'),head=$('#head');
@@ -122,6 +122,7 @@ function buildScroll(){
  const rt=gsap.timeline({scrollTrigger:{trigger:'.reel',start:'top top',end:()=>'+='+(track.scrollWidth-W+H*.3),pin:true,scrub:1,invalidateOnRefresh:true}});
  rt.to(track,{x:()=>-(track.scrollWidth-W),ease:'none'});
  gsap.from('.ascii-copy blockquote',{opacity:0,y:60,scrollTrigger:{trigger:'.ascii-copy blockquote',start:'top 90%',end:'top 60%',scrub:1}});
+ gsap.from('.shop-h,.prod',{y:80,opacity:0,stagger:.12,ease:'power3.out',scrollTrigger:{trigger:'.shop',start:'top 85%',end:'top 25%',scrub:1}});
  gsap.from('.big span',{yPercent:110,opacity:0,stagger:.15,scrollTrigger:{trigger:'.contact',start:'top 80%',end:'top 20%',scrub:1}});
  ScrollTrigger.refresh();
  // one master timeline for the avatar, keyed in scroll pixels
