@@ -170,3 +170,8 @@ blockquote{max-width:46ch;margin-top:40px;font-size:clamp(17px,1.6vw,24px);line-
 @media (max-width:760px){.shop-grid{gap:18px}.shop-grid>.prod{width:78vw}}
 @media (prefers-reduced-motion:reduce){.shop-grid{scroll-behavior:auto}}
 .shop-grid>.prod{justify-content:flex-start}.shop-grid .pv{margin-bottom:22px;flex:none}.shop-grid .tag{margin-top:auto}
+/* cards size to content */
+.panel.p{height:auto;max-height:none;justify-content:flex-start}
+.panel.p .pv{margin-bottom:18px;flex:none}
+.shop-grid{align-items:flex-start}.shop-grid>.prod{min-height:0}.shop-grid .tag{margin-top:0}
+.shop-grid{flex:none}
