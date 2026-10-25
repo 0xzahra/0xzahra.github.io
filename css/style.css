@@ -163,3 +163,10 @@ blockquote{max-width:46ch;margin-top:40px;font-size:clamp(17px,1.6vw,24px);line-
 [data-theme=light] .theme-tog .i-sun{display:none}[data-theme=light] .theme-tog .i-moon{display:block}
 [data-theme=light] .status i{box-shadow:none}
 .prod .pv{margin-bottom:auto}.prod .tag{margin-top:22px}
+/* shop horizontal reel */
+.shop-grid{display:flex;gap:3vw;max-width:none;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-padding:0 6vw;padding:6px 6vw 22px;margin:0 -6vw;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain;scrollbar-width:thin;scrollbar-color:var(--g) transparent}
+.shop-grid::-webkit-scrollbar{height:6px}.shop-grid::-webkit-scrollbar-thumb{background:var(--g);border-radius:999px}.shop-grid::-webkit-scrollbar-track{background:var(--line)}
+.shop-grid>.prod{flex:0 0 auto;width:min(36vw,440px);scroll-snap-align:start}
+@media (max-width:760px){.shop-grid{gap:18px}.shop-grid>.prod{width:78vw}}
+@media (prefers-reduced-motion:reduce){.shop-grid{scroll-behavior:auto}}
+.shop-grid>.prod{justify-content:flex-start}.shop-grid .pv{margin-bottom:22px;flex:none}.shop-grid .tag{margin-top:auto}

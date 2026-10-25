@@ -84,6 +84,12 @@
     <p class="desc">A guide plus tracker for UTME candidates.</p>
     <p class="price"><b>₦3,000</b></p>
    </article>
+   <article class="prod" data-product="sakandire">
+    <img class="pv" loading="lazy" src="img/previews/sakandire.svg" alt="Sakandire free study app on Selar" width="640" height="400"><p class="mono tag">SS1–SS3 · WAEC / NECO / JAMB</p>
+    <h3>Sakandire – Free Study App</h3>
+    <p class="desc">Free study app for SS1–SS3 students preparing for WAEC, NECO and JAMB.</p>
+    <p class="price"><b>Free</b></p>
+   </article>
   </div>
   <div class="shop-store"><a class="mag btn solid" data-mag href="https://ivxvzvpyybpdxtcoimoh.supabase.co/functions/v1/go?l=store&amp;s=pf" target="_blank" rel="noopener"><span>Visit my Selar store</span></a></div>
  </section>
@@ -121,4 +127,5 @@
 <script src="js/main.js"></script>
 <button class="theme-tog" id="themeTog" type="button" aria-label="Switch to light theme" title="Toggle theme"><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1"/></svg><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg></button>
 <script>(function(){var d=document.documentElement,b=document.getElementById("themeTog");function s(){var l=d.getAttribute("data-theme")==="light";b.setAttribute("aria-label",l?"Switch to dark theme":"Switch to light theme");b.setAttribute("aria-pressed",l?"true":"false")}s();b.addEventListener("click",function(){var t=d.getAttribute("data-theme")==="light"?"dark":"light";d.setAttribute("data-theme",t);try{localStorage.setItem("theme",t)}catch(e){}s()})})()</script>
+<script>(function(){var g=document.querySelector(".shop-grid");if(!g)return;g.addEventListener("wheel",function(e){if(Math.abs(e.deltaX)>Math.abs(e.deltaY))return;var m=g.scrollWidth-g.clientWidth;if(m<2)return;var l=g.scrollLeft;if((e.deltaY>0&&l<m-1)||(e.deltaY<0&&l>1)){e.preventDefault();g.scrollLeft=l+e.deltaY}},{passive:false})})()</script>
 </body></html>
