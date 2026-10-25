@@ -140,3 +140,10 @@ blockquote{max-width:46ch;margin-top:40px;font-size:clamp(17px,1.6vw,24px);line-
 .soc svg{width:20px;height:20px;fill:currentColor}
 .soc:hover{color:#021;background:var(--g);border-color:var(--g);box-shadow:0 0 24px #39ff8866}
 @media (max-width:760px){.socials{gap:10px}.soc{width:46px;height:46px}}
+
+.pv{display:block;width:100%;aspect-ratio:16/10;height:auto;object-fit:cover;object-position:top;border-radius:6px;border:1px solid #ffffff1a;margin-bottom:auto;flex:0 1 auto;min-height:0;pointer-events:none;transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.p .pv{margin-bottom:18px}.p:hover .pv,.prod:hover .pv{transform:scale(1.02)}
+.prod .pv{margin-bottom:20px}
+.shop-store{display:flex;justify-content:center;margin-top:32px}.shop-store .btn{height:54px;font-size:11px}
+@media (max-width:760px){.shop-store .btn{width:100%}}
+@media (prefers-reduced-motion:reduce){.p:hover .pv,.prod:hover .pv{transform:none}}
