@@ -147,3 +147,26 @@ blockquote{max-width:46ch;margin-top:40px;font-size:clamp(17px,1.6vw,24px);line-
 .shop-store{display:flex;justify-content:center;margin-top:32px}.shop-store .btn{height:54px;font-size:11px}
 @media (max-width:760px){.shop-store .btn{width:100%}}
 @media (prefers-reduced-motion:reduce){.p:hover .pv,.prod:hover .pv{transform:none}}
+
+/* light theme */
+.theme-tog{position:fixed;left:18px;bottom:18px;z-index:95;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;border:1px solid #ffffff33;background:#0b1215cc;color:var(--t);backdrop-filter:blur(6px);transition:transform .3s,border-color .3s}
+.theme-tog:hover{transform:rotate(-15deg);border-color:var(--g)}.theme-tog:focus-visible{outline:2px solid var(--c);outline-offset:3px}
+.theme-tog svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round}
+.theme-tog .i-moon{display:none}
+[data-theme=light] .theme-tog .i-sun{display:none}[data-theme=light] .theme-tog .i-moon{display:block}
+[data-theme=light]{--bg:#f3f6f4;--g:#0a8a47;--c:#0a7f8c;--r:#d6152a;--t:#0d1714;--m:#4c5c58;color-scheme:light}
+[data-theme=light] .theme-tog{background:#ffffffd9;border-color:#0d171433}
+[data-theme=light] #rain{filter:invert(1) hue-rotate(180deg);opacity:.16}
+[data-theme=light] #ascii{filter:invert(1) hue-rotate(180deg) saturate(1.4)}
+[data-theme=light] .grain{opacity:.035}
+[data-theme=light] .bar{background:#0d171414}
+[data-theme=light] .panel:not(.intro),[data-theme=light] .prod{border-color:#0d17141f;background:linear-gradient(160deg,#ffffffe6,#eef3f0e6);box-shadow:0 10px 30px -18px #0d171440}
+[data-theme=light] .pv{border-color:#0d17141f}
+[data-theme=light] .p .n,[data-theme=light] .prod .n{-webkit-text-stroke-color:#0a7f8c66}
+[data-theme=light] .btn{border-color:#0d171440}
+[data-theme=light] .btn:hover,[data-theme=light] .soc:hover{color:#fff}
+[data-theme=light] .btn.solid{color:#fff}
+[data-theme=light] .soc{border-color:#0d171438}
+[data-theme=light] .p .badge{border-color:#0a8a4766}
+[data-theme=light] .hud{mix-blend-mode:normal}
+[data-theme=light] .ascii-copy blockquote{color:#1e2f2a}
