@@ -8,11 +8,11 @@ const mouse={x:innerWidth/2,y:innerHeight/2,nx:0,ny:0};
 addEventListener('mousemove',e=>{mouse.x=e.clientX;mouse.y=e.clientY;mouse.nx=e.clientX/innerWidth*2-1;mouse.ny=e.clientY/innerHeight*2-1});
 
 /* ---------- typed tagline ---------- */
-const tagText='> GM, I am Zahra Usman. Web3 content creator · community manager · AI product builder · writing lead. Building at the intersection of people, words & onchain.';
+const tagText='> GM, I am 0xarewah. Web3 content creator · community manager · AI product builder · writing lead. Building at the intersection of people, words & onchain.';
 function typeTag(){const el=$('#typed');if(RM){el.textContent=tagText;return}let i=0;(function t(){el.textContent=tagText.slice(0,++i);if(i<tagText.length)setTimeout(t,i<3?120:18+Math.random()*30)})()}
 
 /* ---------- 8-ball ---------- */
-const answers=[['SIGNS<br>POINT<br>TO YES','book a call →','https://calendly.com/0xzahra'],['OUTLOOK<br>ON-<br>CHAIN','see proof of work ↓','#build'],['SAY<br>GM','email me →','mailto:usmanzahra19@gmail.com'],['IT IS<br>CERT-<br>AIN','linkedin →','https://www.linkedin.com/in/zahra-usman-34a1a437b/'],['ASK<br>LINK<br>TREE','linktr.ee/0xzahra →','https://linktr.ee/0xzahra']];
+const answers=[['SIGNS<br>POINT<br>TO YES','book a call →','https://calendly.com/0xzahra'],['OUTLOOK<br>ON-<br>CHAIN','see proof of work ↓','#build'],['SAY<br>GM','DM on X →','https://x.com/0xarewah'],['IT IS<br>CERT-<br>AIN','linkedin →','https://www.linkedin.com/in/zahra-usman-34a1a437b/'],['ASK<br>LINK<br>TREE','linktr.ee/0xzahra →','https://linktr.ee/0xzahra']];
 let ai=0;const ball=$('#ball'),ans=$('#answer'),hint=$('#hint');
 ball.addEventListener('click',()=>{const [a,h,u]=answers[ai++%answers.length];
  if(!window.gsap||RM){ans.innerHTML=a;ans.style.opacity=1;ans.style.transform='none';setHint(h,u);return}
